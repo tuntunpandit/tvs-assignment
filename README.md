@@ -28,15 +28,15 @@ Open your terminal and type these:
 
 1. **Login Page**
 <p align="center">
-  <img src="/assets/screenshots/1.png" width="350" title="login">
+  <img src="tvsAssignment/src/assets/screenshots/1.png" width="350" title="login">
 </p>
 
 2. **Users list Page**
 <p align="center">
-  <img src="/assets/screenshots/2.png" width="350" title="list">
+  <img src="tvsAssignment/src/assets/screenshots/2.png" width="350" title="list">
 </p>
 
 3. **View Details Page**
 <p align="center">
-  <img src="/assets/screenshots/3.png" width="350" title="details">
+  <img src="tvsAssignment/src/assets/screenshots/3.png" width="350" title="details">
 </p>
