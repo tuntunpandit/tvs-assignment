@@ -27,17 +27,17 @@ Open your terminal and type these:
 # Screeshots
 
 1. **Login Page**
-  <div>
-    <img src="src/assets/screenshots/1.png" width="90%" title="login">
-  </div>
+    <div>
+      <img src="src/assets/screenshots/3.png" width="90%" title="login">
+    </div>
 
 2. **Users list Page**
     <div>
-      <img src="src/assets/screenshots/2.png" width="90%" title="list">
+      <img src="src/assets/screenshots/1.png" width="90%" title="list">
     </div>
 
 3. **View Details Page**
-   <div>
-      <img src="src/assets/screenshots/3.png" width="90%" title="details">
+    <div>
+      <img src="src/assets/screenshots/2.png" width="90%" title="details">
     </div>
 
