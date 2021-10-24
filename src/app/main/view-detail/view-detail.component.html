@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    <a class="text-decoration-none mt-3" type="button" href="javascript:history.back()">
+        <i class="fa fa-arrow-left mr-3"></i>
+        Go to lists
+    </a>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card my-3">
+                <div class="card-header bg-info">
+                    <h3 class="mb-0">User Data</h3>
+                </div>
+                <div class="row no-gutter">
+                    <div class="col-md-4 col-12 d-flex align-items-center">
+                        <div class="card-body img-wrapper">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()"
+                                    class="align-items-center d-flex flex-column justify-content-center">
+                                    <div class="group-gap">
+                                        <div class="avatar-upload">
+                                            <div class="avatar-edit">
+                                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg"
+                                                    #fileInput capture="camera" (change)="uploadImage($event)" />
+                                            </div>
+                                            <div class="avatar-preview">
+                                                <div id="imagePreview"
+                                                    [style.backgroundImage]="imageUrl ? 'url('+ imageUrl +')' : 'url('+ 'assets/images/no-image.png' +')'">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-danger btn-block upload-btn"
+                                        (click)="fileInput.click()">Upload Image</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <div class="card-body user-card d-flex justify-content-center">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th>Name :</th>
+                                        <td>{{userData?.name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Role :</th>
+                                        <td>{{userData?.role}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Joining Date :</th>
+                                        <td>{{userData.date}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Place :</th>
+                                        <td>{{userData.place}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Salary :</th>
+                                        <td>{{userData.salary}}</td>
+                                    </tr>
+                                    <tr *ngIf="imageUploaded" class="bg-success">
+                                        <th>Image Captured At :</th>
+                                        <td>{{imageCapturedAt | date: 'medium'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card my-3">
+                <div class="card-body p-0">
+                    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                        <agm-marker [latitude]="latitude" [longitude]="longitude">
+                            <agm-info-window [isOpen]="true">
+                                <div class="align-items-center d-flex flex-column justify-content-between">
+                                    <img class="agm-image" [src]="imageUrl ? imageUrl : 'assets/images/no-image.png'"
+                                        [alt]="userData?.name">
+                                    <h2 class="text-danger ml-2">{{userData?.name}}</h2>
+                                </div>
+                            </agm-info-window>
+                        </agm-marker>
+                    </agm-map>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
