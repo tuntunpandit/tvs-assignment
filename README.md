@@ -27,10 +27,10 @@ Open your terminal and type these:
 # Screeshots
 
 1. **Login Page**
-<img src="/assets/screenshots/1.png" width="350" title="login">
+<img src="src/app/assets/screenshots/1.png" width="350" title="login">
 
 2. **Users list Page**
-<img src="/assets/screenshots/2.png" width="350" title="list">
+<img src="/src/app/assets/screenshots/2.png" width="350" title="list">
 
 3. **View Details Page**
-<img src="/assets/screenshots/3.png" width="350" title="details">
+<img src="/app/assets/screenshots/3.png" width="350" title="details">
