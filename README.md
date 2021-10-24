@@ -28,7 +28,7 @@ Open your terminal and type these:
 
 1. **Login Page**
 <p align="center">
-  <img src="tvsAssignment/src/assets/screenshots/1.png" width="350" title="login">
+  <img [src]="assets/screenshots/1.png" width="350" title="login">
 </p>
 
 2. **Users list Page**
