@@ -1,27 +1,42 @@
-# TvsAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+# TVS Assignment
 
-## Development server
+Create a Web application based on Angular/ReactJS which has list to  represent the data returned by the below REST API. The list should have search functionality.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### functionality Required
+The application should have a total of 3 screens.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Login page** – should take an input (username and password) from the user.
+2. **list page** – on successful login the user should be redirected to this page, where you need to display the data that is returned by the below REST API.
+3. **Details page** – on click of a list item the app should navigate to a new page which displays the details of the data that the row contains. On this page add a button to capture a photo using the phone camera.
+**Photo Result page** – once the user clicks the photo, please show this page with the image that the user captured, with the timestamp when the photo was captured on the image
 
-## Build
+#### To showcase your creativity please think of representing the data using various charts/graphs or on a map. For eg.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. **Bar Graph** – Have a button on the list page which opens a new screen. The new screen should have a Bar graph with the salaries of the first ten employees plotted on it.
+2. **Map** – Represent the various cities in the response data on a map.
 
-## Running unit tests
+# Follow these steps to run this project in localhost
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Open your terminal and type these:
+1. `git clone https://github.com/tuntunpandit/tvs-assignment.git`
+2. `npm install`
+3. `ng serve -o`
 
-## Running end-to-end tests
+# Screeshots
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. **Login Page**
+<p align="center">
+  <img src="assets/screenshots/1.png" width="350" title="login">
+</p>
 
-## Further help
+2. **Users list Page**
+<p align="center">
+  <img src="assets/screenshots/2.png" width="350" title="list">
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. **View Details Page**
+<p align="center">
+  <img src="assets/screenshots/3.png" width="350" title="details">
+</p>
