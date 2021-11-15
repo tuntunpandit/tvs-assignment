@@ -48,7 +48,7 @@ const routes: Routes = [
     ChartsModule,
     RouterModule.forRoot(routes),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBjKQrznzrNWhT2yVwtzWxVL7Z4NQ5ipps',
+      apiKey: '',
       libraries: ['places']
     })
   ],
